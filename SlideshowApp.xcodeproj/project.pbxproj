@@ -12,6 +12,10 @@
 		CFFF5CE921C8A6FE00AFFC24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFFF5CE721C8A6FE00AFFC24 /* Main.storyboard */; };
 		CFFF5CEB21C8A70000AFFC24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFFF5CEA21C8A70000AFFC24 /* Assets.xcassets */; };
 		CFFF5CEE21C8A70000AFFC24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFFF5CEC21C8A70000AFFC24 /* LaunchScreen.storyboard */; };
+		CFFF5CF621C8ACE800AFFC24 /* image0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFFF5CF521C8ACE800AFFC24 /* image0.jpg */; };
+		CFFF5CF821C8AD0000AFFC24 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFFF5CF721C8ACFF00AFFC24 /* image1.jpg */; };
+		CFFF5CFA21C8AD1900AFFC24 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFFF5CF921C8AD1800AFFC24 /* image2.jpg */; };
+		CFFF5CFC21C8F40200AFFC24 /* ZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFF5CFB21C8F40200AFFC24 /* ZoomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		CFFF5CEA21C8A70000AFFC24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFFF5CED21C8A70000AFFC24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFFF5CEF21C8A70000AFFC24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFFF5CF521C8ACE800AFFC24 /* image0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image0.jpg; sourceTree = "<group>"; };
+		CFFF5CF721C8ACFF00AFFC24 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+		CFFF5CF921C8AD1800AFFC24 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
+		CFFF5CFB21C8F40200AFFC24 /* ZoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +64,14 @@
 			children = (
 				CFFF5CE321C8A6FE00AFFC24 /* AppDelegate.swift */,
 				CFFF5CE521C8A6FE00AFFC24 /* ViewController.swift */,
+				CFFF5CF521C8ACE800AFFC24 /* image0.jpg */,
+				CFFF5CF721C8ACFF00AFFC24 /* image1.jpg */,
+				CFFF5CF921C8AD1800AFFC24 /* image2.jpg */,
 				CFFF5CE721C8A6FE00AFFC24 /* Main.storyboard */,
 				CFFF5CEA21C8A70000AFFC24 /* Assets.xcassets */,
 				CFFF5CEC21C8A70000AFFC24 /* LaunchScreen.storyboard */,
 				CFFF5CEF21C8A70000AFFC24 /* Info.plist */,
+				CFFF5CFB21C8F40200AFFC24 /* ZoomViewController.swift */,
 			);
 			path = SlideshowApp;
 			sourceTree = "<group>";
@@ -123,8 +135,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFFF5CEE21C8A70000AFFC24 /* LaunchScreen.storyboard in Resources */,
+				CFFF5CFA21C8AD1900AFFC24 /* image2.jpg in Resources */,
 				CFFF5CEB21C8A70000AFFC24 /* Assets.xcassets in Resources */,
 				CFFF5CE921C8A6FE00AFFC24 /* Main.storyboard in Resources */,
+				CFFF5CF621C8ACE800AFFC24 /* image0.jpg in Resources */,
+				CFFF5CF821C8AD0000AFFC24 /* image1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFFF5CE621C8A6FE00AFFC24 /* ViewController.swift in Sources */,
+				CFFF5CFC21C8F40200AFFC24 /* ZoomViewController.swift in Sources */,
 				CFFF5CE421C8A6FE00AFFC24 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
