@@ -68,7 +68,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="backButtom" destination="oRN-S7-Y2s" id="pIt-V8-5Lz"/>
                         <outlet property="buttom" destination="2D6-oH-UV6" id="Pdv-1W-HMW"/>
+                        <outlet property="goButtom" destination="sZ8-kf-hik" id="Lv3-PS-Ozs"/>
                         <outlet property="imageView" destination="J8q-e1-NN6" id="Eml-sB-F2s"/>
                     </connections>
                 </viewController>
@@ -113,7 +115,6 @@
                         <viewLayoutGuide key="safeArea" id="PZX-C1-Srw"/>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="vtO-mn-icu" id="gH8-pm-3u8"/>
                         <outlet property="zoomImage" destination="vtO-mn-icu" id="8Rf-e2-x03"/>
                     </connections>
                 </viewController>

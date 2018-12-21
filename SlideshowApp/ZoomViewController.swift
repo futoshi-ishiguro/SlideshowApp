@@ -10,22 +10,13 @@ import UIKit
 
 class ZoomViewController: UIViewController{
     @IBOutlet weak var zoomImage: UIImageView!
-    @IBOutlet weak var imageView: UIImageView!
-    var zoomImageNo: Int = 0
-    let images = [
-        "image0.jpg",
-        "image1.jpg",
-        "image2.jpg"
-    ]
+    
+    var x: UIImage! //ViewControllerから受け取った画像データ
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let name = images[zoomImageNo]
-        
-        let image = UIImage(named: name)
-        
-        imageView.image = image
+        zoomImage.image = x
     }
 
     override func didReceiveMemoryWarning() {

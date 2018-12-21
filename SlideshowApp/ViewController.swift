@@ -10,12 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var buttom: UIButton!
+    @IBOutlet weak var buttom: UIButton! //再生停止ボタン
+    @IBOutlet weak var backButtom: UIButton!
+    @IBOutlet weak var goButtom: UIButton!
     
     var timer: Timer!
     
     var dispImageNo = 0
-    var PlayOrStop = 0
+    var PlayOrStop = 0 //再生中か停止中かの判定
     
     let images = [
         "image0.jpg",
@@ -23,6 +25,7 @@ class ViewController: UIViewController {
         "image2.jpg"
     ]
     
+    //画像を表示
     func displayImage(){
         
         
@@ -40,30 +43,37 @@ class ViewController: UIViewController {
         
         imageView.image = image
     }
+    
     @IBAction func go(_ sender: Any) {
         if PlayOrStop == 0{
             dispImageNo += 1
             displayImage()
         }
     }
+    
     @IBAction func back(_ sender: Any) {
         if PlayOrStop == 0{
             dispImageNo -= 1
             displayImage()
         }
     }
+    
     @IBAction func PlayAndStop(_ sender: Any) {
         
         if PlayOrStop == 0{
             self.timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(updateTimer(_:)), userInfo: nil, repeats: true)
             PlayOrStop = 1
             buttom.setTitle("停止", for: .normal)
+            goButtom.isEnabled = false
+            backButtom.isEnabled = false
         }
         
         else{
             self.timer.invalidate()
             PlayOrStop = 0
             buttom.setTitle("再生", for: .normal)
+            goButtom.isEnabled = true
+            backButtom.isEnabled = true
         }
     }
     
@@ -88,11 +98,11 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let zoomViewController:ZoomViewController = segue.destination as! ZoomViewController
         
-        zoomViewController.zoomImageNo = dispImageNo
+        zoomViewController.x = imageView.image
+        self.timer.invalidate()
  }
     @IBAction func unwind(_ segue: UIStoryboardSegue){
+        self.timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(updateTimer(_:)), userInfo: nil, repeats: true)
     }
-
-
 }
 
