@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var backButtom: UIButton!
     @IBOutlet weak var goButtom: UIButton!
     
+    var y: UIImage!
+    
     var timer: Timer!
     
     var dispImageNo = 0
@@ -102,7 +104,8 @@ class ViewController: UIViewController {
         self.timer.invalidate()
  }
     @IBAction func unwind(_ segue: UIStoryboardSegue){
-        self.timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(updateTimer(_:)), userInfo: nil, repeats: true)
+        imageView.image = y
+         self.timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(updateTimer(_:)), userInfo: nil, repeats: true)
     }
 }
 
